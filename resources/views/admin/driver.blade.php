@@ -1,6 +1,9 @@
+
 @include('/admin/partials/header')
 @include('/admin/partials/nav')
 @include('/admin/partials/sidebar')
+
+
 
 <div id="layoutSidenav_content">
     <main>
@@ -20,52 +23,37 @@
                                 <tr>
                                     <th>Id</th>
                                     <th>Name</th>
-                                    <th>Gender</th>
-                                    <th>Product Type</th>
-                                    <th>Price</th>
-                                    <th>Discount</th>
-                                    <th>Coler</th>
-                                    <th>Size</th>
-                                    <th>Trend</th>
-                                    <th>Image</th>
-                                    <!-- <th>Actions</th> -->
+                                    <th>Mobile Number</th>
+                                    <th>Licence Number</th>
+                                    <th>Licence Experdate Date </th>
+                                    <th>NID</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>Id</th>
                                     <th>Name</th>
-                                    <th>Gender</th>
-                                    <th>Product Type</th>
-                                    <th>Price</th>
-                                    <th>Discount</th>
-                                    <th>Color</th>
-                                    <th>Size</th>
-                                    <th>Trend</th>
-                                    <th>Image</th>
-                                    <!-- <th>Actions</th> -->
+                                    <th>Mobile Number</th>
+                                    <th>Licence Number</th>
+                                    <th>Licence Experdate Date </th>
+                                    <th>NID</th>
                                 </tr>
                             </tfoot>
                             <tbody>
+                                @foreach ($driver as $items => $value)
                                 <tr>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>
-                                        <img style="width: 30%; height:15%" src="">
-                                    </td>
+                                    <td>{{$value->id}}</td>
+                                    <td>{{$value->name}}</td>
+                                    <td>{{$value->mobile_number}}</td>
+                                    <td>{{$value->licence_number}}</td>
+                                    <td>{{$value->licence_experdate_date}}</td>
+                                    <td>{{$value->nid}}</td>
                                     <!-- <td class="text-center">
                                         <a href="#" class="view" title="View" data-toggle="tooltip"><i style="color: #03A9F4" class="material-icons">&#xE417;</i></a>
                                         <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i style="color: #FFC107;" class="material-icons">&#xE254;</i></a>                                    
                                     </td> -->
                                 </tr>
-                                                                            
+                                @endforeach                                       
                             </tbody>
                         </table>
                     </div>

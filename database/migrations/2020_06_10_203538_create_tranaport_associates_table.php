@@ -15,6 +15,9 @@ class CreateTranaportAssociatesTable extends Migration
     {
         Schema::create('tranaport_associates', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('fk_transport_id');
+            $table->bigInteger('fk_driver_id');
+            $table->bigInteger('fk_managers_id');
             $table->timestamps();
         });
     }

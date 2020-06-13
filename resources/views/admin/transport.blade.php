@@ -20,52 +20,40 @@
                                 <tr>
                                     <th>Id</th>
                                     <th>Name</th>
-                                    <th>Gender</th>
-                                    <th>Product Type</th>
-                                    <th>Price</th>
-                                    <th>Discount</th>
+                                    <th>Type</th>
+                                    <th>Model</th>
                                     <th>Coler</th>
-                                    <th>Size</th>
-                                    <th>Trend</th>
-                                    <th>Image</th>
-                                    <!-- <th>Actions</th> -->
+                                    <th>Licence Number</th>
+                                    <th>Licence Experdate</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>Id</th>
                                     <th>Name</th>
-                                    <th>Gender</th>
-                                    <th>Product Type</th>
-                                    <th>Price</th>
-                                    <th>Discount</th>
-                                    <th>Color</th>
-                                    <th>Size</th>
-                                    <th>Trend</th>
-                                    <th>Image</th>
-                                    <!-- <th>Actions</th> -->
+                                    <th>Type</th>
+                                    <th>Model</th>
+                                    <th>Coler</th>
+                                    <th>Licence Number</th>
+                                    <th>Licence Experdate</th>
                                 </tr>
                             </tfoot>
                             <tbody>
+                                @foreach ($transport as $items => $value)
                                 <tr>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>
-                                        <img style="width: 30%; height:15%" src="">
-                                    </td>
+                                    <td>{{$value->id}}</td>
+                                    <td>{{$value->name}}</td>
+                                    <td>{{$value->type}}</td>
+                                    <td>{{$value->mpdel}}</td>
+                                    <td>{{$value->coler}}</td>
+                                    <td>{{$value->licence_number}}</td>
+                                    <td>{{$value->licence_experdate}}</td>
                                     <!-- <td class="text-center">
                                         <a href="#" class="view" title="View" data-toggle="tooltip"><i style="color: #03A9F4" class="material-icons">&#xE417;</i></a>
                                         <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i style="color: #FFC107;" class="material-icons">&#xE254;</i></a>                                    
                                     </td> -->
                                 </tr>
-                                                                            
+                                @endforeach                                       
                             </tbody>
                         </table>
                     </div>
