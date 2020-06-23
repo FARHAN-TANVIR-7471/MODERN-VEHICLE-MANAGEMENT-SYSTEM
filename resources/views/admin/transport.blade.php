@@ -22,7 +22,7 @@
                                     <th>Name</th>
                                     <th>Type</th>
                                     <th>Model</th>
-                                    <th>Coler</th>
+                                    <th>Color</th>
                                     <th>Licence Number</th>
                                     <th>Licence Experdate</th>
                                 </tr>
@@ -48,10 +48,6 @@
                                     <td>{{$value->coler}}</td>
                                     <td>{{$value->licence_number}}</td>
                                     <td>{{$value->licence_experdate}}</td>
-                                    <!-- <td class="text-center">
-                                        <a href="#" class="view" title="View" data-toggle="tooltip"><i style="color: #03A9F4" class="material-icons">&#xE417;</i></a>
-                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i style="color: #FFC107;" class="material-icons">&#xE254;</i></a>                                    
-                                    </td> -->
                                 </tr>
                                 @endforeach                                       
                             </tbody>

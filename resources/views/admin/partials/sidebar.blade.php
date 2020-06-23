@@ -28,9 +28,9 @@
                 ></a>
                 <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="{{url('/admin/login')}}">Transport Assist</a>
-                        <a class="nav-link" href="{{url('/admin/register')}}">Transport Schedule</a>
-                        <a class="nav-link" href="{{url('/admin/password')}}">Completed Schedule</a>
+                        <a class="nav-link" href="{{url('/transportAssociate')}}">Transport Assist</a>
+                        <a class="nav-link" href="{{url('#')}}">Transport Schedule</a>
+                        <a class="nav-link" href="{{url('#')}}">Completed Schedule</a>
                     </nav>
                     <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth"
@@ -40,12 +40,13 @@
                         <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <!-- <a class="nav-link" href="{{url('/admin/login')}}">Login</a> -->
-                                <a class="nav-link" href="{{url('/admin/register')}}">Register</a>
-                                <a class="nav-link" href="{{url('/admin/password')}}">Forgot Password</a>
+                                <a class="nav-link" href="{{url('/admin/register')}}">Create Admin</a>
+                                <a class="nav-link" href="{{url('/admin/password')}}">Accout Recovery</a>
                             </nav>
                         </div>
                     </nav>
                 </div>
+                <a class="nav-link" href="{{url('/admincomplane')}}">Complane</a>
                 <div class="sb-sidenav-menu-heading">Addons</div>
                 <a class="nav-link" href="{{URL::asset('charts')}}"
                     ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>

@@ -85,13 +85,13 @@
                             <div class="form-group col-md-6">
                                 <label for="exampleFormControlInput1">Mobile Number: </label>
                                 {{csrf_field()}}
-                                <input type="text" name="mobile_number" class="form-control" id="exampleFormControlInput1" placeholder="+880 xxxxxxxxxx">
+                                <input type="text" name="mobile_number" class="form-control" id="exampleFormControlInput1" placeholder="+880 xxxx-xxxxxx">
                             </div>
 
                            <div class="form-group col-md-6">
                                 {{csrf_field()}}
                               <label for="exampleFormControlInput1">Licence Number: </label>
-                                <input type="text" name="licence_number" class="form-control" placeholder="Coler">
+                                <input type="text" name="licence_number" class="form-control" placeholder="Licence Number">
                             </div>
                         </div>
 

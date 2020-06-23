@@ -46,6 +46,15 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 	Route::get('/transportManager','TransportManagerController@index');
 	/*Transport Manager insert*/
 	Route::post('/transportManagerinsert','TransportManagerController@store');
+	/*Transport Manager*/
+	Route::get('/transportAssociate','TranaportAssociateController@index');
+	/*Transport Manager insert*/
+	Route::post('/transportAssociateinsert','TranaportAssociateController@store');
+	/*complane*/
+	Route::get('/admincomplane','ComplaneController@adminindex');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/complane','ComplaneController@index');
+Route::post('/complaneinsert','ComplaneController@store');

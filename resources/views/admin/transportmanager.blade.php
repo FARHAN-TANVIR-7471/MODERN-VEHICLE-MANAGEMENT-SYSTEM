@@ -20,52 +20,34 @@
                                 <tr>
                                     <th>Id</th>
                                     <th>Name</th>
-                                    <th>Gender</th>
-                                    <th>Product Type</th>
-                                    <th>Price</th>
-                                    <th>Discount</th>
-                                    <th>Coler</th>
-                                    <th>Size</th>
-                                    <th>Trend</th>
-                                    <th>Image</th>
-                                    <!-- <th>Actions</th> -->
+                                    <th>Date of birth</th>
+                                    <th>Mobile Number</th>
+                                    <th>NID</th>
+                                    <th>Actions</th>
+                                    
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>Id</th>
                                     <th>Name</th>
-                                    <th>Gender</th>
-                                    <th>Product Type</th>
-                                    <th>Price</th>
-                                    <th>Discount</th>
-                                    <th>Color</th>
-                                    <th>Size</th>
-                                    <th>Trend</th>
-                                    <th>Image</th>
-                                    <!-- <th>Actions</th> -->
+                                    <th>Date of birth</th>
+                                    <th>Mobile Number</th>
+                                    <th>NID</th>
+                                    <th>Actions</th>
                                 </tr>
                             </tfoot>
                             <tbody>
+                                @foreach ($transportManager as $items => $value)
                                 <tr>
+                                    <td>{{$value->id}}</td>
+                                    <td>{{$value->name}}</td>
+                                    <td>{{$value->date_of_birth}}</td>
+                                    <td>{{$value->mobile_number}}</td>
+                                    <td>{{$value->nid}}</td>
                                     <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>
-                                        <img style="width: 30%; height:15%" src="">
-                                    </td>
-                                    <!-- <td class="text-center">
-                                        <a href="#" class="view" title="View" data-toggle="tooltip"><i style="color: #03A9F4" class="material-icons">&#xE417;</i></a>
-                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i style="color: #FFC107;" class="material-icons">&#xE254;</i></a>                                    
-                                    </td> -->
                                 </tr>
-                                                                            
+                                @endforeach                                           
                             </tbody>
                         </table>
                     </div>
