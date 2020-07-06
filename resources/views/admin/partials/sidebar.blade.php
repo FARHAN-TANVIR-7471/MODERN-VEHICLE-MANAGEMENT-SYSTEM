@@ -4,9 +4,10 @@
         <div class="sb-sidenav-menu mt-3">
             <div class="nav">
                 <!-- <div class="sb-sidenav-menu-heading">Core</div> -->
+
                 <a class="nav-link" href="{{URL::asset('/dashboard')}}"
                     ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    MBMS
+                    MVMS
                 </a>
                 <div class="sb-sidenav-menu-heading">Interface</div>
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts"
@@ -46,20 +47,11 @@
                         </div>
                     </nav>
                 </div>
-                <a class="nav-link" href="{{url('/admincomplane')}}">Complane</a>
-                <div class="sb-sidenav-menu-heading">Addons</div>
-                <a class="nav-link" href="{{URL::asset('charts')}}"
-                    ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                    Charts</a
-                ><a class="nav-link" href="{{URL::asset('tables')}}"
-                    ><div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                    Tables</a
-                >
             </div>
         </div>
         <div class="sb-sidenav-footer">
-            <div class="small">Logged in as:</div>
-            Start Bootstrap
+            <div class="small">Modern Vertical</div>
+             Management System
         </div>
     </nav>
 </div>

@@ -50,6 +50,10 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 	Route::get('/transportAssociate','TranaportAssociateController@index');
 	/*Transport Manager insert*/
 	Route::post('/transportAssociateinsert','TranaportAssociateController@store');
+	/*Transport Manager*/
+	Route::get('/transportSchodule','TransportscheduleController@index');
+	/*Transport Manager insert*/
+	Route::post('/transportSchoduleinsert','TransportscheduleController@store');
 	/*complane*/
 	Route::get('/admincomplane','ComplaneController@adminindex');
 });

@@ -16,7 +16,7 @@ class TranaportAssociateController extends Controller
                 ->join('drivers', 'drivers.id', '=', 'tranaport_associates.fk_driver_id')
                 ->select('transports.id','transports.*','drivers.*')
                 ->get();
-        dd($tranaport_associates);
+        //dd($tranaport_associates);
 
         $transport = DB::table('transports')->get();
         $driver = DB::table('drivers')->get();
@@ -27,7 +27,7 @@ class TranaportAssociateController extends Controller
 
     public function create()
     {
-        //
+        
     }
 
     public function store(Request $request)

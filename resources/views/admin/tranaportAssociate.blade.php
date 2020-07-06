@@ -8,46 +8,53 @@
         <div class="container-fluid">
             <h1 class="mt-4"></h1>
             <div class="breadcrumb mb-4 col-md-12 ">
-                <button type="button" class="btn btn-info m-1" id="addbtn"> Add Transport Assain Information</button>
+                <button type="button" class="btn btn-info m-1" id="addbtn"> Add Transport Assign Information</button>
                 <button type="button" class="btn btn-info m-1" id="showbtn">Show ransport Assain Information</button>
             </div>
             
             <div class="card mb-4" id="datatable">
-                <div class="card-header"><i class="fas fa-table mr-1"></i>ransport Assain Information List</div>
+                <div class="card-header"><i class="fas fa-table mr-1"></i>ransport Assign Information List</div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Name</th>
-                                    <th>Date of birth</th>
-                                    <th>Mobile Number</th>
-                                    <th>NID</th>
-                                    <th>Actions</th>
+                                    <th>Driver Name</th>
+                                    <th>Manager Number</th>
+                                    <th>Transport Type</th>
+                                    <th>Transport Model</th>
+                                    <th>Coler</th>
+                                    <th>Licence Number</th>
+                                    <th>Licence Eexper Date</th>
                                     
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Name</th>
-                                    <th>Date of birth</th>
-                                    <th>Mobile Number</th>
-                                    <th>NID</th>
-                                    <th>Actions</th>
+                                    <th>Driver Name</th>
+                                    <th>Manager Number</th>
+                                    <th>Transport Type</th>
+                                    <th>Transport Model</th>
+                                    <th>Coler</th>
+                                    <th>Licence Number</th>
+                                    <th>Licence Eexper Date</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                
+                            @foreach ($tranaport_associates as $items => $value)
                                 <tr>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                    <td>A</td>
-                                </tr>                                       
+                                    <td>{{$value->id}}</td>
+                                    <td>{{$value->name}}</td>
+                                    <td>{{$value->mobile_number}}</td>
+                                    <td>{{$value->type}}</td>
+                                    <td>{{$value->mpdel}}</td>
+                                    <td>{{$value->coler}}</td>
+                                    <td>{{$value->licence_number}}</td>
+                                    <td>{{$value->licence_experdate}}</td>
+                                </tr>
+                            @endforeach                                       
                             </tbody>
                         </table>
                     </div>
@@ -55,7 +62,7 @@
             </div>
 
             <div class="card" id="inputfild">
-                <div class="card-header"><i class="fas fa-table mr-1"></i>Add Assain</div>
+                <div class="card-header"><i class="fas fa-table mr-1"></i>Add Transport Assign</div>
                 <div class="card-body">
                     
                     <form action="/transportAssociateinsert" method="post" enctype="multipart/form-data">
@@ -92,13 +99,10 @@
                                 </select>
                             </div>
                         </div>
-
                         <button type="submit" class="btn btn-primary">Submit</button>
-
                     </form>
                 </div>
             </div>
-
         </div>
     </main>
 
