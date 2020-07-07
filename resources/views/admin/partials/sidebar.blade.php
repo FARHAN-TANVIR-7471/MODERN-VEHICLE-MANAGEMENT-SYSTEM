@@ -30,22 +30,22 @@
                 <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="{{url('/transportAssociate')}}">Transport Assist</a>
-                        <a class="nav-link" href="{{url('#')}}">Transport Schedule</a>
-                        <a class="nav-link" href="{{url('#')}}">Completed Schedule</a>
+                        <a class="nav-link" href="{{url('/transportSchodule')}}">Transport Schedule</a>
+                        <!-- <a class="nav-link" href="{{url('#')}}">Completed Schedule</a> -->
                     </nav>
-                    <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                    <!-- <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth"
                             >Authentication
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                         ></a>
                         <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <!-- <a class="nav-link" href="{{url('/admin/login')}}">Login</a> -->
+                                
                                 <a class="nav-link" href="{{url('/admin/register')}}">Create Admin</a>
                                 <a class="nav-link" href="{{url('/admin/password')}}">Accout Recovery</a>
                             </nav>
                         </div>
-                    </nav>
+                    </nav> -->
                 </div>
             </div>
         </div>
