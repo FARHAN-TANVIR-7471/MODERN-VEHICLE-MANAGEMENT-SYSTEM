@@ -30,9 +30,10 @@ Route::get('/admin/password', function () {
 Auth::routes();
 
 Route::group(['middleware' => ['auth', 'admin']], function(){
-	Route::get('/dashboard', function () {
-    	return view('admin.index');
-	});
+	// Route::get('/dashboard', function () {
+    // 	return view('admin.index');
+	// });
+	Route::get('/dashboard','HomeController@adminIndex')->name('admin.dashboard');
 
 	/*transport*/
 	Route::get('/transport','TransportController@index');
@@ -51,7 +52,7 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 	/*Transport Manager insert*/
 	Route::post('/transportAssociateinsert','TranaportAssociateController@store');
 	/*Transport Manager*/
-	Route::get('/transportSchodule','TransportscheduleController@index');
+	Route::get('/transportSchodule','TransportscheduleController@index')->name('transport.schodule');
 	/*Transport Manager insert*/
 	Route::post('/transportSchoduleinsert','TransportscheduleController@store');
 	/*complane*/
