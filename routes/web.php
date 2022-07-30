@@ -58,8 +58,15 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 	Route::get('/transportSchodule','TransportscheduleController@index')->name('transport.schodule');
 	/*Transport Manager insert*/
 	Route::post('/transportSchoduleinsert','TransportscheduleController@store');
+	Route::get('/transport-schodule-edit/{id}','TransportscheduleController@edit')->name('transport.schodule.edit');
+	Route::post('/transport-schodule-update','TransportscheduleController@update')->name('transport.schodule.update');
+	Route::get('/transport-schodule-delete/{id}','TransportscheduleController@destroy')->name('transport.schodule.destroy');
+
+
 	/*complane*/
 	Route::get('/admincomplane','ComplaneController@adminindex');
+	
+
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

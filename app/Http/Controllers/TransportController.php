@@ -45,7 +45,6 @@ class TransportController extends Controller
     public function edit($id)
     {
         $transport = DB::table('transports')->where('id', $id)->first();
-        // dd($transport);
         return view('admin.transportEdit',['transport' => $transport] );
     }
 

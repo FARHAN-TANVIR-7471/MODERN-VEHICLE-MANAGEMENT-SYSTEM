@@ -13,7 +13,7 @@
             
 
             <div class="card">
-                <div class="card-header"><i class="fas fa-table mr-1"></i>Add Product</div>
+                <div class="card-header"><i class="fas fa-table mr-1"></i>Edit Transport</div>
                 <div class="card-body">
                     
                     <form action="{{ route('transport.update') }}" method="post" enctype="multipart/form-data">

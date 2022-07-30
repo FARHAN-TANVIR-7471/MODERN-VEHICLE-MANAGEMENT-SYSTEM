@@ -23,6 +23,7 @@
                                     <th>Schedule Name</th>
                                     <th>Start Time</th>
                                     <th>End Time</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -31,6 +32,7 @@
                                     <th>Schedule Name</th>
                                     <th>Start Time</th>
                                     <th>End Time</th>
+                                    <th></th>
                                 </tr>
                             </tfoot>
                             <tbody>
@@ -40,6 +42,12 @@
                                     <td>{{$value->schedules_name}}</td>
                                     <td>{{$value->start_time}}</td>
                                     <td>{{$value->end_time}}</td>
+                                    <td>
+                                        <a href="{{ route('transport.schodule.edit', $value->id) }}">Edit</a>
+
+                                        <a href="{{ route('transport.schodule.destroy', $value->id) }}" style="color: red">Delete</a>
+                                    </td>
+                                    
                                 </tr>
                             @endforeach                                     
                             </tbody>

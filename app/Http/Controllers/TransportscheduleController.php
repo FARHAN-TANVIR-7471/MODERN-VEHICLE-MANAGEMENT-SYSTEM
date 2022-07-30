@@ -66,9 +66,12 @@ class TransportscheduleController extends Controller
      * @param  \App\transportschedule  $transportschedule
      * @return \Illuminate\Http\Response
      */
-    public function edit(transportschedule $transportschedule)
+    public function edit($id)
     {
-        //
+        $transportschedules = DB::table('transportschedules')->where('id', $id)->first();
+        // dd( $transportschedules);
+        $transport = DB::table('transports')->get();
+        return view('admin.tranaport-schedule-edit',['transport'=>$transport,'transportschedules' => $transportschedules] );
     }
 
     /**
@@ -80,7 +83,14 @@ class TransportscheduleController extends Controller
      */
     public function update(Request $request, transportschedule $transportschedule)
     {
-        //
+        $transport = DB::table('transportschedules')->where('id', $request->id)->update([
+            'schedules_name' => $request->input('schedules_name'),
+            'transport_id' => $request->input('transport_id'),
+            'start_time' => $request->input('start_time'),
+            'end_time' => $request->input('end_time'),
+
+        ]);
+        return redirect()->route('transport.schodule');
     }
 
     /**
@@ -89,8 +99,9 @@ class TransportscheduleController extends Controller
      * @param  \App\transportschedule  $transportschedule
      * @return \Illuminate\Http\Response
      */
-    public function destroy(transportschedule $transportschedule)
+    public function destroy($id)
     {
-        //
+        $transport = DB::table('transportschedules')->where('id', $id)->delete();
+        return redirect()->route('transport.schodule');
     }
 }
