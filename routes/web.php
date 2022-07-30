@@ -36,7 +36,10 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 	Route::get('/dashboard','HomeController@adminIndex')->name('admin.dashboard');
 
 	/*transport*/
-	Route::get('/transport','TransportController@index');
+	Route::get('/transport','TransportController@index')->name("transport.index");
+	Route::get('/transport-edit/{id}','TransportController@edit')->name('transport.edit');
+	Route::post('/transport-update','TransportController@update')->name('transport.update');
+	Route::get('/transport-delete/{id}','TransportController@destroy')->name('transport.destroy');
 	/*product type insert*/
 	Route::post('/transportinsert','TransportController@store');
 	/*Driver*/

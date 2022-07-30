@@ -42,9 +42,11 @@ class TransportController extends Controller
         //
     }
 
-    public function edit(transport $transport)
+    public function edit($id)
     {
-        //
+        $transport = DB::table('transports')->where('id', $id)->first();
+        // dd($transport);
+        return view('admin.transportEdit',['transport' => $transport] );
     }
 
     /**
@@ -54,13 +56,23 @@ class TransportController extends Controller
      * @param  \App\Model\transport  $transport
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, transport $transport)
+    public function update(Request $request)
     {
-        //
+        $transport = DB::table('transports')->where('id', $request->id)->update([
+            'name' => $request->input('name'),
+            'type' => $request->input('type'),
+            'mpdel' => $request->input('mpdel'),
+            'coler' => $request->input('coler'),
+            'licence_number' => $request->input('licence_number'),
+            'licence_experdate' => $request->input('licence_experdate'),
+
+        ]);
+        return redirect()->route('transport.index');
     }
 
-    public function destroy(transport $transport)
+    public function destroy($id)
     {
-        //
+        $transport = DB::table('transports')->where('id', $id)->delete();
+        return redirect()->route('transport.index');
     }
 }

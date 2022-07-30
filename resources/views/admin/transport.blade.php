@@ -25,6 +25,7 @@
                                     <th>Color</th>
                                     <th>Licence Number</th>
                                     <th>Licence Experdate</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -36,6 +37,7 @@
                                     <th>Coler</th>
                                     <th>Licence Number</th>
                                     <th>Licence Experdate</th>
+                                    <th></th>
                                 </tr>
                             </tfoot>
                             <tbody>
@@ -48,6 +50,11 @@
                                     <td>{{$value->coler}}</td>
                                     <td>{{$value->licence_number}}</td>
                                     <td>{{$value->licence_experdate}}</td>
+                                    <td>
+                                        <a href="{{ route('transport.edit', $value->id) }}">Edit</a>
+
+                                        <a href="{{ route('transport.destroy', $value->id) }}" style="color: red">Delete</a>
+                                    </td>
                                 </tr>
                                 @endforeach                                       
                             </tbody>
