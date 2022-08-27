@@ -62,9 +62,10 @@ class DriverController extends Controller
      * @param  \App\Model\Driver  $driver
      * @return \Illuminate\Http\Response
      */
-    public function edit(Driver $driver)
+    public function edit($id)
     {
-        //
+        $drivers = DB::table('drivers')->where('id', $id)->first();
+        return view('admin.driver-edit',['drivers' => $drivers] );
     }
 
     /**
@@ -76,7 +77,16 @@ class DriverController extends Controller
      */
     public function update(Request $request, Driver $driver)
     {
-        //
+        $transport = DB::table('drivers')->where('id', $request->id)->update([
+            'name' => $request->input('name'),
+            'date_of_birth' => $request->input('date_of_birth'),
+            'mobile_number' => $request->input('mobile_number'),
+            'licence_number' => $request->input('licence_number'),
+            'licence_number' => $request->input('licence_number'),
+            'nid' => $request->input('nid'),
+
+        ]);
+        return redirect()->route('driver.index');
     }
 
     /**
@@ -85,8 +95,9 @@ class DriverController extends Controller
      * @param  \App\Model\Driver  $driver
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Driver $driver)
+    public function destroy($id)
     {
-        //
+        $transport = DB::table('drivers')->where('id', $id)->delete();
+        return redirect()->route('driver.index');
     }
 }

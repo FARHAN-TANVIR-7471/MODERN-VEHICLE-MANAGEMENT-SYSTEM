@@ -43,9 +43,13 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 	/*product type insert*/
 	Route::post('/transportinsert','TransportController@store');
 	/*Driver*/
-	Route::get('/driver','DriverController@index');
+	Route::get('/driver','DriverController@index')->name('driver.index');
 	/*driver insert*/
 	Route::post('/driverinsert','DriverController@store');
+	Route::get('/driver-edit/{id}','DriverController@edit')->name('driver.edit');
+	Route::post('/driver-update','DriverController@update')->name('driver.update');
+	Route::get('/driver-delete/{id}','DriverController@destroy')->name('driver.destroy');
+
 	/*Transport Manager*/
 	Route::get('/transportManager','TransportManagerController@index');
 	/*Transport Manager insert*/
