@@ -1,0 +1,368 @@
+/* google fonts fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Yeseva+One&display=swap');
+
+/* common style var*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+}
+
+:root{
+    --main-color: #E02C6D;
+    --box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    --border-radius: 5px;
+    --box-background-color: #FFFFFF;
+    --white-text:#FFFFFF;
+    --main-with: 1047px;
+}
+
+
+
+/* main section */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    max-width: var(--main-with);
+}
+
+/* menu bar */
+.navbar{
+    width: 1000px;
+}
+.menu-logo{
+    width: 50%;
+    float: left;
+}
+
+.menu-item{
+    width: 50%;
+    float: right;
+}
+
+
+ul {
+    list-style-type: none;
+    float: right;
+}
+
+li {
+    display: inline;
+    margin-left: 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* banner style start */
+.banners{
+    display: flex;
+}
+
+.banner .title-banner h1{
+    font-size: 52px;
+}
+
+.banner p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.banner a{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--white-text);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 41px;
+}
+
+.banner a span{
+    margin-left: 8px;
+}
+
+.banner img{
+    width: 440px;
+    height: 414px;
+}
+
+/* companies logo section start*/
+.companies{
+    margin-top: 70px;
+    display: flex;
+} 
+
+.companie img{
+    margin-right: 50px;
+    align-items: center;
+}
+
+/* product section start */
+.products{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.products h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.product-item{
+    background: #FFFFFF;
+    padding: 10px;
+    /* border: medium solid rgb(236, 237, 236); */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.product-details .product-title{
+    font-family: Poppins;
+    font-size: 28px;
+    color: #18191F;
+    margin-bottom: 0;
+}
+
+.product-details .product-price{
+    font-family: Inter;
+    font-size: 24px;
+    color: #2e3037;
+    margin-top: 0;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.total-rating{
+    color: #A2A2A2;
+    font-size: 14px;
+}
+
+.product-details p{
+    color: #787885;
+    font-size: 14px;
+}
+
+.see-more{
+    margin-top: 30px;
+    text-align: right;
+}
+
+.see-more a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* news laller  */
+.news-latter{
+    text-align: center;
+}
+
+.news-latter-form{
+    margin-bottom: 70px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--white-text);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.instruction{
+    color: rgb(99, 99, 99);
+}
+
+/* footter section start  */
+footer{
+    text-align: center;
+    background-color: black;
+    color: var(--white-text);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: var(--white-text);
+    margin-left: 5px;
+}
+
+/* mopbile device */
+@media only screen and (max-width:688px){
+    .container{
+        width: 90%;
+    }
+    .menu-logo{
+        text-align: center;
+    }
+    .menu-logo h2{
+        font-size: 16px;
+    }
+
+    .mobile-hidden{
+        display: none;
+    }
+
+    .banners{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banners .left{
+        order: 2;
+    }
+
+    .banners .right{
+        order: 1;
+    }
+
+    .banner .title-banner h1{
+        font-size: 24px;
+    }
+    
+    .banner p{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .banner img{
+        padding-top: 30px;
+        width: 250px;
+        height: 250px;
+    }
+
+    /* companie logo section */
+
+    .companies{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+
+    .companie{
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+
+    .companie img{
+        width: 50px;
+        height: 50px;
+    }
+
+    /* product section start  */
+
+    .product{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-image img{
+        width: 300px;
+        height: 256px;
+    }
+
+
+}
+
+/* tab device */
+
+@media only screen and (min-width:689px) and (max-width:992px){
+    .container{
+        width: 90%;
+    }
+
+    .mobile-hidden{
+        display: none;
+    }
+
+    .banners{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banners .left{
+        order: 2;
+    }
+
+    .banners .right{
+        order: 1;
+    }
+
+    .banner .title-banner h1{
+        font-size: 32px;
+    }
+    
+    .banner p{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .banner img{
+        padding-top: 30px;
+        width: 350px;
+        height: 350px;
+    }
+
+    /* companie logo section */
+
+    .companies{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+
+    .companie{
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+
+    .companie img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* product section start  */
+
+    .product{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-image img{
+        width: 300px;
+        height: 256px;
+    }
+}
