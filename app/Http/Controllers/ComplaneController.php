@@ -21,7 +21,7 @@ class ComplaneController extends Controller
     public function adminindex()
     {
         $complanes = DB::table('complanes')->get();
-        return view('admin.complanes',['complanes'=>$complanes]);
+        return view('admin.complanes', ['complanes' => $complanes]);
     }
 
     /**
@@ -42,12 +42,11 @@ class ComplaneController extends Controller
      */
     public function store(Request $request)
     {
-        $perpose =$request->input('perpose');
-        $transport_name  =$request->input('transport_name');
-        $complane_message  =$request->input('complane_message');
+        $perpose = $request->input('perpose');
+        $transport_name  = $request->input('transport_name');
+        $complane_message  = $request->input('complane_message');
 
-        $data = array('perpose'=>$perpose, 'transport_name'=>$transport_name,'complane_message'=>$complane_message);
-
+        $data = array('perpose' => $perpose, 'transport_name' => $transport_name, 'complane_message' => $complane_message);
         DB::table('complanes')->insert($data);
         return redirect('/');
     }

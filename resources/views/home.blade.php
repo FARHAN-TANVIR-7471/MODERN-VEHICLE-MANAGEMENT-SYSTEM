@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/79625afb81.js" crossorigin="anonymous"></script>
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="{{URL::asset('fontend/style.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('fontend/style.css') }}">
     {{-- <link rel="stylesheet" href="fontend/style.css"> --}}
-    <title>Assinment 2</title>
+    <title>Transport</title>
 </head>
+
 <body>
     <header></header>
 
@@ -33,22 +35,24 @@
                 </ul>
             </div>
         </section>
-       
+
         <!-- banner section start-->
         <section class="container">
             <div class="banners">
                 <div class="banner left">
                     <div class="title-banner">
-                        <h1 class="text-font">Start your Journey as  <br> Influencer</h1>
+                        <h1 class="text-font">Start your Journey as <br> Influencer</h1>
                     </div>
-                    
-                    <p>I have been starting my career as a facebook "Influencer". I want to develop myself as a creative engineer and I want to increase my skill day by day as a creative engineer.</p>
-        
-                    <a href="https://www.linkedin.com/in/farhan-19720/" type="button" class="button-sty" target="_blank">Explore Now <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+
+                    <p>I have been starting my career as a facebook "Influencer". I want to develop myself as a creative
+                        engineer and I want to increase my skill day by day as a creative engineer.</p>
+
+                    <a href="https://www.linkedin.com/in/farhan-19720/" type="button" class="button-sty"
+                        target="_blank">Explore Now <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
                 </div>
 
                 <div class="banner right">
-                    <img class="banner-img" src="{{asset("image/kfwsklyu.png")}}" alt="profile photo">
+                    <img class="banner-img" src="{{ asset('image/kfwsklyu.png') }}" alt="profile photo">
                 </div>
             </div>
         </section>
@@ -88,13 +92,14 @@
                                     <i class="fas fa-star empty"></i>
                                     <span class="total-rating">4.5</span>
                                 </div>
-                                
+
                             </div>
                             <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
+                                <br> Buyers protection possible!
+                            </p>
                         </div>
                     </div>
-    
+
                     <div class="product-item">
                         <div class="product-image">
                             <img src="images/mic.png" alt="">
@@ -111,10 +116,11 @@
                                     <i class="fas fa-star empty"></i>
                                     <span class="total-rating">4.5</span>
                                 </div>
-                                
+
                             </div>
                             <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
+                                <br> Buyers protection possible!
+                            </p>
                         </div>
                     </div>
 
@@ -134,10 +140,11 @@
                                     <i class="fas fa-star empty"></i>
                                     <span class="total-rating">4.5</span>
                                 </div>
-                                
+
                             </div>
                             <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
+                                <br> Buyers protection possible!
+                            </p>
                         </div>
                     </div>
 
@@ -157,10 +164,11 @@
                                     <i class="fas fa-star empty"></i>
                                     <span class="total-rating">4.5</span>
                                 </div>
-                                
+
                             </div>
                             <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
+                                <br> Buyers protection possible!
+                            </p>
                         </div>
                     </div>
 
@@ -180,10 +188,11 @@
                                     <i class="fas fa-star empty"></i>
                                     <span class="total-rating">4.5</span>
                                 </div>
-                                
+
                             </div>
                             <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
+                                <br> Buyers protection possible!
+                            </p>
                         </div>
                     </div>
 
@@ -203,10 +212,11 @@
                                     <i class="fas fa-star empty"></i>
                                     <span class="total-rating">4.5</span>
                                 </div>
-                                
+
                             </div>
                             <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
+                                <br> Buyers protection possible!
+                            </p>
                         </div>
                     </div>
 
@@ -226,10 +236,11 @@
                                     <i class="fas fa-star empty"></i>
                                     <span class="total-rating">4.5</span>
                                 </div>
-                                
+
                             </div>
                             <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
+                                <br> Buyers protection possible!
+                            </p>
                         </div>
                     </div>
 
@@ -249,10 +260,11 @@
                                     <i class="fas fa-star empty"></i>
                                     <span class="total-rating">4.5</span>
                                 </div>
-                                
+
                             </div>
                             <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
+                                <br> Buyers protection possible!
+                            </p>
                         </div>
                     </div>
 
@@ -272,58 +284,45 @@
                                     <i class="fas fa-star empty"></i>
                                     <span class="total-rating">4.5</span>
                                 </div>
-                                
+
                             </div>
                             <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
+                                <br> Buyers protection possible!
+                            </p>
                         </div>
                     </div>
-
-                    <!-- <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/tripod.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Flex Tripod</h3>
-                            <p class="product-price">$50.48</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-                                
-                            </div>
-                            <p>Wordwide shifting available
-                               <br> Buyers protection possible!</p>
-                        </div>
-                    </div> -->
                 </div>
                 <div class="see-more">
                     <a href="#">See More <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
                 </div>
             </div>
-            
-            
+
+
         </section>
 
         <section class="container">
-            <div class="news-latter"><h2 class="news-latter-title">HIT THAT SUBSCRIBE BUTTON</h2></div>
+            <div class="news-latter">
+                <h2 class="news-latter-title">Complain</h2>
+            </div>
             <div class="news-latter-form">
-                <form>
-                    <label for="fname">We send the best emails.</label>
-                    <input type="text" id="email" name="email" placeholder="test@example.com">
-                    <label for="lname">Last Name</label>
-                    <button class="block">SUBSCRIBE</button>
+                <form action="{{ route('complaneinsert') }}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <label for="lname">Purpose: </label>
+                    <input type="text" id="perpose" name="perpose" placeholder="Perpose">
+                    <label for="lname">Transport Name:</label>
+                    <input type="text" id="transport_name" name="transport_name" placeholder="Transport Name">
+                    <label for="lname">Complane Massage:</label>
+                    <input type="text" id="complane_message" name="complane_message"
+                        placeholder="Complane Message">
+                    {{-- <label for="lname">Last Name</label> --}}
+                    <button class="block">SUBMIT</button>
 
-                  </form>
-                  <div>
-                    <p class="instruction">By signing up you agree to receive communications via email. For more information please refer to our Privacy Policy.</p>
-                  </div>
-                  
+                </form>
+                <div>
+                    <p class="instruction">By signing up you agree to receive communications via email. For more
+                        information please refer to our Privacy Policy.</p>
+                </div>
+
             </div>
         </section>
     </main>
@@ -332,7 +331,7 @@
     <!-- footer section -->
     <footer class="text-font">
         <h3>Influencer products</h3>
-        <small>Copyright <span>&copy;</span> 2020  influencer products</small>
+        <small>Copyright <span>&copy;</span> 2020 influencer products</small>
         <br>
         <small>All rights reserved</small>
         <div class="social-media">
@@ -343,4 +342,5 @@
         </div>
     </footer>
 </body>
+
 </html>

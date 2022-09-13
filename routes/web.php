@@ -77,4 +77,4 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/complane','ComplaneController@index');
-Route::post('/complaneinsert','ComplaneController@store');
+Route::post('/complaneinsert','ComplaneController@store')->name('complaneinsert');
