@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Model\TransportManager;
+use App\Services\UtilityService;
 use Illuminate\Http\Request;
 use DB;
 
@@ -29,15 +30,13 @@ class TransportManagerController extends Controller
         $date_of_birth  =$request->input('date_of_birth');
         $mobile_number  =$request->input('mobile_number');
         $nid  =$request->input('nid');
-        $nid_photo  ='/images/'.$fileOne->getClientOriginalName();
-        $manager_photo  ='/images/'.$fileTwo->getClientOriginalName();
-
-        $destinationPath = 'image/';
-        $fileOne->move($destinationPath,$fileOne->getClientOriginalName());
-        $fileTwo->move($destinationPath,$fileTwo->getClientOriginalName());
+        
+        $imageUploadPath = UtilityService::$imageUploadPath['profile_image'];
+        $utilityService = new UtilityService;
+        $nid_photo  = $utilityService->uplodeImage($fileOne, $imageUploadPath);
+        $manager_photo  = $utilityService->uplodeImage($fileTwo, $imageUploadPath);
 
         $data = array('name'=>$name, 'date_of_birth'=>$date_of_birth,'mobile_number'=>$mobile_number, 'nid'=>$nid,'nid_photo'=>$nid_photo, 'manager_photo'=>$manager_photo);
-        //dd($data);
 
         DB::table('transport_managers')->insert($data);
         return redirect('/transportManager');
