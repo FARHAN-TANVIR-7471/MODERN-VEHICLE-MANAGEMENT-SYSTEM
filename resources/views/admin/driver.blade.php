@@ -23,7 +23,9 @@
                                     <th>Mobile Number</th>
                                     <th>Licence Number</th>
                                     <th>Licence Experdate Date </th>
+                                    <th>Img</th>
                                     <th>NID</th>
+                                    <th>NID Img</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -34,7 +36,9 @@
                                     <th>Mobile Number</th>
                                     <th>Licence Number</th>
                                     <th>Licence Experdate Date </th>
+                                    <th>Img</th>
                                     <th>NID</th>
+                                    <th>NID Img</th>
                                     <th></th>
                                 </tr>
                             </tfoot>
@@ -47,7 +51,9 @@
                                         <td>{{ $value->mobile_number }}</td>
                                         <td>{{ $value->licence_number }}</td>
                                         <td>{{ $value->licence_experdate_date }}</td>
+                                        <td><img src="{{ $value->driver_photo }}" alt="manager_photo" width="60" height="60"></td>
                                         <td>{{ $value->nid }}</td>
+                                        <td><img src="{{ $value->nid_photo }}" alt="manager_photo" width="60" height="60"></td>
                                         <td class="text-center">
                                             <a href="{{ route('driver.edit', $value->id) }}" class="view"
                                                 title="View" data-toggle="tooltip">

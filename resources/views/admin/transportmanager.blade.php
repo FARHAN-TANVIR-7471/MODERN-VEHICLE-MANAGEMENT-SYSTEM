@@ -22,7 +22,9 @@
                                     <th>Name</th>
                                     <th>Date of birth</th>
                                     <th>Mobile Number</th>
+                                    <th>Img</th>
                                     <th>NID</th>
+                                    <th>NID Img</th>
                                     <th>Actions</th>
 
                                 </tr>
@@ -33,7 +35,9 @@
                                     <th>Name</th>
                                     <th>Date of birth</th>
                                     <th>Mobile Number</th>
+                                    <th>Img</th>
                                     <th>NID</th>
+                                    <th>NID Img</th>
                                     <th>Actions</th>
                                 </tr>
                             </tfoot>
@@ -44,7 +48,9 @@
                                         <td>{{ $value->name }}</td>
                                         <td>{{ $value->date_of_birth }}</td>
                                         <td>{{ $value->mobile_number }}</td>
+                                        <td><img src="{{ $value->manager_photo }}" alt="manager_photo" width="60" height="60"></td>
                                         <td>{{ $value->nid }}</td>
+                                        <td><img src="{{ $value->nid_photo }}" alt="nid_photo" width="60" height="60"></td>
                                         <td>
                                             <a href="{{ route('driver.edit', $value->id) }}" class="view"
                                                 title="View" data-toggle="tooltip">
