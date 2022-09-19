@@ -78,12 +78,12 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="exampleFormControlInput1">Manager Name: </label>
-                                <input type="text" name="name" class="form-control" placeholder="name">
+                                <input type="text" name="name" class="form-control" placeholder="name" required>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="exampleFormControlInput1">Date of birth: </label>
                                 {{ csrf_field() }}
-                                <input type="date" class="form-control" id="start" name="date_of_birth">
+                                <input type="date" class="form-control" id="start" name="date_of_birth" required>
                                 <!-- <input type="date" class="form-control" id="start" name="trip-start"
                                    value="2018-07-22"
                                    min="2018-01-01" max="2018-12-31"> -->
@@ -95,41 +95,41 @@
                                 <label for="exampleFormControlInput1">Email: </label>
                                 {{ csrf_field() }}
                                 <input type="email" name="email" class="form-control"
-                                    id="email" placeholder="name@demo.com">
+                                    id="email" placeholder="name@demo.com" required>
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="exampleFormControlInput1">Mobile Number: </label>
                                 {{ csrf_field() }}
                                 <input type="text" name="mobile_number" class="form-control"
-                                    id="exampleFormControlInput1" placeholder="+880 xxxxxxxxxx">
+                                    id="exampleFormControlInput1" placeholder="+880 xxxxxxxxxx" required>
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="exampleFormControlInput1">Password: </label>
                                 {{ csrf_field() }}
                                 <input type="password" name="password" class="form-control"
-                                    id="password" placeholder="......">
+                                    id="password" placeholder="......" required>
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="exampleFormControlInput1">NID Number: </label>
                                 {{ csrf_field() }}
                                 <input type="text" name="nid" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="NID Number">
+                                    placeholder="NID Number" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-6" {{ $errors->has('image') ? 'has-error' : '' }}>
                                 <label for="image">NID Photo: </label>
-                                <input type="file" name="nid_photo" id="image" class="form-control">
+                                <input type="file" name="nid_photo" id="image" class="form-control" required>
                                 <span class="text-danger"> {{ $errors->first('image') }}</span>
                             </div>
 
                             <div class="form-group col-md-6" {{ $errors->has('image') ? 'has-error' : '' }}>
                                 <label for="image">Manager Image: </label>
-                                <input type="file" name="manager_photo" id="image" class="form-control">
+                                <input type="file" name="manager_photo" id="image" class="form-control" required>
                                 <span class="text-danger"> {{ $errors->first('image') }}</span>
                             </div>
                         </div>
