@@ -26,9 +26,9 @@
 
             <div class="menu-item">
                 <ul>
-                    <li class="mobile-hidden"><a href="#home">Home</a></li>
+                    {{-- <li class="mobile-hidden"><a href="#home">Home</a></li>
                     <li class="mobile-hidden"><a href="#news">News</a></li>
-                    <li class="mobile-hidden"><a href="#about">About</a></li>
+                    <li class="mobile-hidden"><a href="#about">About</a></li> --}}
                     <li class="mobile-hidden"><a href="{{ route('login') }}">LOGIN</a></li>
                     {{-- <li class="mobile-hidden"><i class="fas fa-search"></i></li>
                     <li><i class="fas fa-cart-arrow-down"></i></li> --}}
@@ -47,12 +47,12 @@
                     <p>I have been starting my career as a facebook "Influencer". I want to develop myself as a creative
                         engineer and I want to increase my skill day by day as a creative engineer.</p>
 
-                    <a href="https://www.linkedin.com/in/farhan-19720/" type="button" class="button-sty"
+                    <a href="#" type="button" class="button-sty"
                         target="_blank">Explore Now <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
                 </div>
 
                 <div class="banner right">
-                    <img class="banner-img" src="{{ asset('image/kfwsklyu.png') }}" alt="profile photo">
+                    <img class="banner-img" src="{{ asset('kfwsklyu.png') }}" alt="profile photo">
                 </div>
             </div>
         </section>
