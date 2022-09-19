@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Model\TransportManager;
 use App\Services\UtilityService;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use DB;
 
 class TransportManagerController extends Controller
@@ -39,6 +42,16 @@ class TransportManagerController extends Controller
         $data = array('name'=>$name, 'date_of_birth'=>$date_of_birth,'mobile_number'=>$mobile_number, 'nid'=>$nid,'nid_photo'=>$nid_photo, 'manager_photo'=>$manager_photo);
 
         DB::table('transport_managers')->insert($data);
+
+        $user = new User;
+        $newuser['user']= $user->create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'usertype' => "transport_managers",
+            'phone' => $request->mobile_number,
+            'password' => Hash::make($request->password),
+            'remember_token' => Str::random(40)
+        ]);
         return redirect('/transportManager');
     }
 

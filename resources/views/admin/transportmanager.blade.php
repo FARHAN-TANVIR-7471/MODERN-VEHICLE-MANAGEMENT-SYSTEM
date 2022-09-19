@@ -92,10 +92,24 @@
 
                         <div class="form-row">
                             <div class="form-group col-md-6">
+                                <label for="exampleFormControlInput1">Email: </label>
+                                {{ csrf_field() }}
+                                <input type="email" name="email" class="form-control"
+                                    id="email" placeholder="name@demo.com">
+                            </div>
+
+                            <div class="form-group col-md-6">
                                 <label for="exampleFormControlInput1">Mobile Number: </label>
                                 {{ csrf_field() }}
                                 <input type="text" name="mobile_number" class="form-control"
                                     id="exampleFormControlInput1" placeholder="+880 xxxxxxxxxx">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="exampleFormControlInput1">Password: </label>
+                                {{ csrf_field() }}
+                                <input type="password" name="password" class="form-control"
+                                    id="password" placeholder="......">
                             </div>
 
                             <div class="form-group col-md-6">

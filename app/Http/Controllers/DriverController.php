@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Model\Driver;
 use App\Services\UtilityService;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use DB;
 
 class DriverController extends Controller
@@ -42,6 +45,17 @@ class DriverController extends Controller
         $data = array('name'=>$name, 'date_of_birth'=>$date_of_birth,'mobile_number'=>$mobile_number, 'licence_number'=>$licence_number,'licence_experdate_date'=>$licence_experdate_date, 'nid'=>$nid,'nid_photo'=>$nid_photo, 'driver_photo'=>$driver_photo);
 
         DB::table('drivers')->insert($data);
+
+        $user = new User();
+        $newuser['user']= $user->create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'usertype' => "transport_managers",
+            'phone' => $request->mobile_number,
+            'password' => Hash::make($request->password),
+            'remember_token' => Str::random(40)
+        ]);
+
         return redirect('/driver');
     }
 
