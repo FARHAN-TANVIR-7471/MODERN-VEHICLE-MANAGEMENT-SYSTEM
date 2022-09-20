@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\transportschedule;
+use App\Transportschedule;
 use Illuminate\Http\Request;
 use DB;
 
@@ -55,7 +55,7 @@ class TransportscheduleController extends Controller
      * @param  \App\transportschedule  $transportschedule
      * @return \Illuminate\Http\Response
      */
-    public function show(transportschedule $transportschedule)
+    public function show(Transportschedule $transportschedule)
     {
         //
     }
@@ -69,7 +69,6 @@ class TransportscheduleController extends Controller
     public function edit($id)
     {
         $transportschedules = DB::table('transportschedules')->where('id', $id)->first();
-        // dd( $transportschedules);
         $transport = DB::table('transports')->get();
         return view('admin.tranaport-schedule-edit',['transport'=>$transport,'transportschedules' => $transportschedules] );
     }
@@ -78,10 +77,10 @@ class TransportscheduleController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\transportschedule  $transportschedule
+     * @param  \App\Model\transportschedule  $transportschedule
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, transportschedule $transportschedule)
+    public function update(Request $request, Transportschedule $transportschedule)
     {
         $transport = DB::table('transportschedules')->where('id', $request->id)->update([
             'schedules_name' => $request->input('schedules_name'),
@@ -103,5 +102,14 @@ class TransportscheduleController extends Controller
     {
         $transport = DB::table('transportschedules')->where('id', $id)->delete();
         return redirect()->route('transport.schodule');
+    }
+
+    public function schoduleList()
+    {
+        // $authors = Author::with(['books' => fn($query) => $query->where('title', 'like', 'PHP%')])
+
+        // $transportschedules = Transportschedule::with('transport')->get();
+        $transportschedules = Transportschedule::with('transport')->get();
+        return view('schodule-list', ["transportschedules" => $transportschedules]);
     }
 }

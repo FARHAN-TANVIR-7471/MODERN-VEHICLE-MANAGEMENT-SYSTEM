@@ -50,7 +50,7 @@ class DriverController extends Controller
         $newuser['user']= $user->create([
             'name' => $request->name,
             'email' => $request->email,
-            'usertype' => "transport_managers",
+            'usertype' => "driver",
             'phone' => $request->mobile_number,
             'password' => Hash::make($request->password),
             'remember_token' => Str::random(40)

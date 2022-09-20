@@ -71,8 +71,11 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 
 	/*complane*/
 	Route::get('/admincomplane','ComplaneController@adminindex');
-	
+
 });
+
+Route::get('/schodule-list','TransportscheduleController@schoduleList')->name('schodule.list');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
