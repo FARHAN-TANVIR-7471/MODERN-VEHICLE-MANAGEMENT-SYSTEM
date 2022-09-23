@@ -114,4 +114,10 @@ class DriverController extends Controller
         $transport = DB::table('drivers')->where('id', $id)->delete();
         return redirect()->route('driver.index');
     }
+
+    public function driverList()
+    {
+        $drivers = DB::table('drivers')->get();
+        return view('driver-list',['drivers'=>$drivers]);
+    }
 }

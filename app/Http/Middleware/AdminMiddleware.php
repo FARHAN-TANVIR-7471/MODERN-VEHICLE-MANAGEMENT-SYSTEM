@@ -19,12 +19,12 @@ class AdminMiddleware
 
         if (Auth::user()->usertype == 'admin') {
             return $next($request);
-        }elseif (Auth::user()->usertype == 'driver' || Auth::user()->usertype == 'transport_managers') {
+        }elseif (Auth::user()->usertype == 'driver') {
             return redirect()->route('schodule.list');
-
+        }elseif (Auth::user()->usertype == 'transport_managers') {
+            return redirect()->route('schodule.list');
         }
         else{
-            // dd("hello3");
             return redirect('/home');
         }
         

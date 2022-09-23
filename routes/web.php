@@ -32,9 +32,6 @@ Route::get('/admin/password', function () {
 Auth::routes();
 
 Route::group(['middleware' => ['auth', 'admin']], function(){
-	// Route::get('/dashboard', function () {
-    // 	return view('admin.index');
-	// });
 	Route::get('/dashboard','HomeController@adminIndex')->name('admin.dashboard');
 
 	/*transport*/
@@ -75,6 +72,7 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 });
 
 Route::get('/schodule-list','TransportscheduleController@schoduleList')->name('schodule.list');
+Route::get('/driver-list','DriverController@driverList')->name('driver.list');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

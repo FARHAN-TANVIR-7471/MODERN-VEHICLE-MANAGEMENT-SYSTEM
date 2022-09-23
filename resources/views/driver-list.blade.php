@@ -57,17 +57,17 @@
         <!-- Product  section -->
         <section class="container">
             <div class="products">
-                <h1>Transport Schedules</h1>
+                <h1>Driver</h1>
                 <div class="product">
-                    @foreach ($transportschedules as $transportschedule)
+                    @foreach ($drivers as $driver)
                         <div class="product-item">
                             <div class="product-image">
-                                <img src="images/tripod.png" alt="">
+                                <img src="{{ $driver->driver_photo }}" alt="" width="256" height="256">
                             </div>
                             <div class="product-details">
-                                <h3 class="product-title">{{ $transportschedule->schedules_name }}</h3>
-                                <p class="product-price">Start: {{ $transportschedule->start_time }}</p>
-                                <p class="product-price">End: {{ $transportschedule->end_time }}</p>
+                                <h3 class="product-title">{{ $driver->name }}</h3>
+                                {{-- <p class="product-price">Start: {{ $transportschedule->start_time }}</p>
+                                <p class="product-price">End: {{ $transportschedule->end_time }}</p> --}}
                                 {{-- <div class="product-info">
                                     <div class="star-rating">
                                         <i class="fas fa-star filled"></i>
@@ -79,9 +79,9 @@
                                     </div>
 
                                 </div> --}}
-                                <p>Wordwide shifting available
+                                {{-- <p>Wordwide shifting available
                                     <br> Buyers protection possible!
-                                </p>
+                                </p> --}}
                             </div>
                         </div>
                     @endforeach

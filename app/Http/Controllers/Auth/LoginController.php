@@ -32,10 +32,12 @@ class LoginController extends Controller
 
     protected function redirectTo(){
         if (Auth::user()->usertype == 'admin') {
-            
             return 'dashboard';
+        }elseif (Auth::user()->usertype == 'driver') {
+            return 'schodule-list';
+        }elseif (Auth::user()->usertype == 'transport_managers') {
+            return 'schodule-list';
         }
-
         else {
             return 'home';
         }
