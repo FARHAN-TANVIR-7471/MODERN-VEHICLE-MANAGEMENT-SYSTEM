@@ -16,13 +16,24 @@ body{
     --main-with: 1047px;
 }
 
+.text-color{
+    color: var(--main-color);
+}
 
+.active{
+    color: var(--main-color);
+}
 
 /* main section */
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.logo{
+    color: var(--main-color);
+    text-decoration: none;
 }
 
 .container{
@@ -187,6 +198,25 @@ input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+
+label{
+    color: var(--main-color);
+}
+
+.card{
     box-sizing: border-box;
     border: 2px solid var(--main-color);
     border-radius: 10px;

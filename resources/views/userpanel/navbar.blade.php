@@ -1,18 +1,16 @@
 <section class="container navbar">
     <div class="menu-logo">
-        <h2><a href="{{ route('home') }}" style="text-decoration: none; color:black">MVMS</a> </h2>
+        <h2><a href="{{ route('home') }}" style="text-decoration: none; color:#E02C6D">TMS</a> </h2>
     </div>
 
     <div class="menu-item">
         <ul>
-            {{-- <li class="mobile-hidden"><a href="#home">Home</a></li>
-            <li class="mobile-hidden"><a href="#news">News</a></li>--}}
-            <li class="mobile-hidden"><a href="{{ route('driver.list') }}">Driver</a></li> 
-            <li class="mobile-hidden"><a href="{{ route('schodule.list') }}">Schedule</a></li> 
+            <li class="mobile-hidden"><a class="{{ Route::currentRouteName() === 'driver.list' ? 'active' : '' }}" href="{{ route('driver.list') }}">Driver</a></li> 
+            <li class="mobile-hidden"><a class="{{ Route::currentRouteName() === 'schodule.list' ? 'active' : '' }}" href="{{ route('schodule.list') }}">Schedule</a></li> 
 
-            <li class="mobile-hidden"><a href="{{ route('user.booking') }}">Booking</a></li> 
+            <li class="mobile-hidden"><a class="{{ Route::currentRouteName() === 'user.booking' ? 'active' : '' }}" href="{{ route('user.booking') }}">Booking</a></li> 
             @if (Auth::user())
-            <li class="mobile-hidden"><a href="{{ route('admin.dashboard') }}">Deshbord</a></li> 
+            <li class="mobile-hidden"><a class="{{ Route::currentRouteName() === 'admin.dashboard' ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">Deshbord</a></li> 
             <li>
                 <a href="{{ route('logout') }}"
                     onclick="event.preventDefault();

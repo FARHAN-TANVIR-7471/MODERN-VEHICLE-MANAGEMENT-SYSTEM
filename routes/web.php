@@ -68,11 +68,14 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 
 	/*complane*/
 	Route::get('/admincomplane','ComplaneController@adminindex');
+	Route::get('/admin/booking-list','BookingController@index')->name('admin.booking.list');
 
 });
 
 Route::group(['middleware' => ['auth']], function(){
 	Route::get('/user/dashboard','HomeController@userIndex')->name('user.dashboard');
+	Route::get('/user/booking','BookingController@userBooking')->name('user.booking');
+	Route::post('/user/booking/request','BookingController@userBookingRequest')->name('user.booking.request');
 });
 
 Route::get('/schodule-list','TransportscheduleController@schoduleList')->name('schodule.list');
