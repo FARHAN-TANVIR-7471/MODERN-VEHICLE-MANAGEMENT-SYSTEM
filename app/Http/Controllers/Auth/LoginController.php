@@ -36,7 +36,8 @@ class LoginController extends Controller
         }elseif (Auth::user()->usertype == 'driver') {
             return 'schodule-list';
         }elseif (Auth::user()->usertype == 'transport_managers') {
-            return 'schodule-list';
+            // return 'schodule-list';
+            return 'dashboard';
         }elseif (Auth::user()->usertype == null) {
             return 'user/dashboard';
         }

@@ -52,7 +52,7 @@
 
                                 <div class="col-md-6 mb-3">
                                     <label for="request_date" class="form-label">Request Date</label>
-                                    <input type="date" class="form-control" id="request_date" name="request_date">
+                                    <input type="datetime-local" class="form-control" id="request_date" name="request_date">
                                 </div>
 
                                 <div class="col-md-6 mb-3">

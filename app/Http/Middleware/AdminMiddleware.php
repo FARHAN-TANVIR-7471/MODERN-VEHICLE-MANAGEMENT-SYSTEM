@@ -22,7 +22,8 @@ class AdminMiddleware
         }elseif (Auth::user()->usertype == 'driver') {
             return redirect()->route('schodule.list');
         }elseif (Auth::user()->usertype == 'transport_managers') {
-            return redirect()->route('schodule.list');
+            return $next($request);
+            // return redirect()->route('schodule.list');
         }elseif (Auth::user()->usertype == null) {
             return redirect()->route('user.dashboard');
         }

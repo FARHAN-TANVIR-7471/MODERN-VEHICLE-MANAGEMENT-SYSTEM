@@ -212,6 +212,15 @@ input[type=date] {
     border-radius: 10px;
 }
 
+input[type=datetime-local] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+
 label{
     color: var(--main-color);
 }
