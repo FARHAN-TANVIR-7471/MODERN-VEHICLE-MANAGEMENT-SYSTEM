@@ -37,4 +37,11 @@ class HomeController extends Controller
         $transportschedules = DB::table('transportschedules')->get();
         return view('admin.index', ['transportschedules'=>$transportschedules]);
     }
+
+    public function userIndex()
+    {
+        echo "Helloo";
+        // $transportschedules = DB::table('transportschedules')->get();
+        // return view('admin.index', ['transportschedules'=>$transportschedules]);
+    }
 }
