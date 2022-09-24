@@ -21,12 +21,12 @@
                                     <th>Id</th>
                                     <th>Name</th>
                                     <th>Mobile Number</th>
-                                    <th>Licence Number</th>
-                                    <th>Licence Experdate Date </th>
-                                    <th>Img</th>
-                                    <th>NID</th>
-                                    <th>NID Img</th>
-                                    <th></th>
+                                    <th>request date</th>
+                                    <th>pickup </th>
+                                    <th>destationation</th>
+                                    {{-- <th>NID</th>
+                                    <th>NID Img</th> --}}
+                                    <th>Status</th>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -34,12 +34,12 @@
                                     <th>Id</th>
                                     <th>Name</th>
                                     <th>Mobile Number</th>
-                                    <th>Licence Number</th>
-                                    <th>Licence Experdate Date </th>
-                                    <th>Img</th>
-                                    <th>NID</th>
-                                    <th>NID Img</th>
-                                    <th></th>
+                                    <th>request date</th>
+                                    <th>pickup </th>
+                                    <th>destationation</th>
+                                    {{-- <th>NID</th>
+                                    <th>NID Img</th> --}}
+                                    <th>Status</th>
                                 </tr>
                             </tfoot>
                             <tbody>
@@ -48,18 +48,19 @@
                                     <tr>
                                         <td>{{ $booking->id }}</td>
                                         <td>{{ $booking->name }}</td>
-                                        <td>{{ $booking->mobile_number }}</td>
-                                        <td>{{ $booking->licence_number }}</td>
-                                        <td>{{ $booking->licence_experdate_date }}</td>
+                                        <td>{{ $booking->mobile }}</td>
+                                        <td>{{ $booking->request_date }}</td>
+                                        <td>{{ $booking->pickup }}</td>
+                                        <td>{{ $booking->destationation }}</td>
                                         <td class="text-center">
                                             <a href="{{ route('driver.edit', $booking->id) }}" class="view"
                                                 title="View" data-toggle="tooltip">
-                                                Edit
+                                                Approve
                                             </a>
-                                            <a href="{{ route('driver.destroy', $booking->id) }}" class="edit"
+                                            {{-- <a href="{{ route('driver.destroy', $booking->id) }}" class="edit"
                                                 title="Edit" data-toggle="tooltip">
                                                 <span style="color: red;">Delete</span> 
-                                            </a>
+                                            </a> --}}
                                         </td>
                                     </tr>
                                 @endforeach

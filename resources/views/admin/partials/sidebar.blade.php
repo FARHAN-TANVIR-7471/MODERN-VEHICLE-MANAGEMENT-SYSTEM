@@ -62,6 +62,17 @@
                         <a class="nav-link" href="{{url('/transportAssociate')}}">Transport Assist</a>
                     </nav>
                 </div>
+
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#bookinglist" aria-expanded="false" aria-controls="TransportAssist"
+                    ><div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                    Booking
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
+                ></a>
+                <div class="collapse" id="bookinglist" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" href="{{route('admin.booking.list')}}">Booking List</a>
+                    </nav>
+                </div>
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#TransportSchedule" aria-expanded="false" aria-controls="TransportSchedule"
                     ><div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                     Transport Schedule

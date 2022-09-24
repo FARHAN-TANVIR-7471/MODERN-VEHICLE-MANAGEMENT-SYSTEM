@@ -21,6 +21,7 @@ class CreateBookingsTable extends Migration
             $table->string('request_date')->nullable();
             $table->string('pickup')->nullable();
             $table->string('destationation')->nullable();
+            $table->string('status')->nullable()->default("Pending");
             $table->timestamps();
         });
     }
