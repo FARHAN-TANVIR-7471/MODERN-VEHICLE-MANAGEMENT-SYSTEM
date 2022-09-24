@@ -23,6 +23,8 @@ class AdminMiddleware
             return redirect()->route('schodule.list');
         }elseif (Auth::user()->usertype == 'transport_managers') {
             return redirect()->route('schodule.list');
+        }elseif (Auth::user()->usertype == null) {
+            return redirect()->route('user.dashboard');
         }
         else{
             return redirect('/home');
