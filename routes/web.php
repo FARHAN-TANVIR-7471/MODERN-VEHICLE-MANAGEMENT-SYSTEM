@@ -69,6 +69,7 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
 	/*complane*/
 	Route::get('/admincomplane','ComplaneController@adminindex');
 	Route::get('/admin/booking-list','BookingController@index')->name('admin.booking.list');
+	Route::get('/admin/booking-approve/{id}','BookingController@approve')->name('admin.booking.approve');
 
 });
 

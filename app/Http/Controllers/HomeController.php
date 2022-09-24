@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Booking;
 use Illuminate\Http\Request;
 use DB;
 
@@ -40,8 +41,7 @@ class HomeController extends Controller
 
     public function userIndex()
     {
-        echo "Helloo";
-        // $transportschedules = DB::table('transportschedules')->get();
-        // return view('admin.index', ['transportschedules'=>$transportschedules]);
+        $bookings = Booking::where('user_id', auth()->user()->id)->get();
+        return view('userpanel.deshbord',['bookings' => $bookings]);
     }
 }

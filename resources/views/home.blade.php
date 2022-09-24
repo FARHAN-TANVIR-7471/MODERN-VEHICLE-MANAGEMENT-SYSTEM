@@ -32,8 +32,8 @@
                     <p>I have been starting my career as a facebook "Influencer". I want to develop myself as a creative
                         engineer and I want to increase my skill day by day as a creative engineer.</p>
 
-                    <a href="#" type="button" class="button-sty"
-                        target="_blank">Explore Now <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                    <a href="{{ route('user.booking') }}" type="button" class="button-sty">Booking Now <span><i
+                                class="fas fa-long-arrow-alt-right"></i></span></a>
                 </div>
 
                 <div class="banner right">

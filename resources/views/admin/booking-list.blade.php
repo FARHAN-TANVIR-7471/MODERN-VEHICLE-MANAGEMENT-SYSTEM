@@ -18,27 +18,23 @@
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>Id</th>
+                                    <th>#</th>
                                     <th>Name</th>
                                     <th>Mobile Number</th>
-                                    <th>request date</th>
-                                    <th>pickup </th>
-                                    <th>destationation</th>
-                                    {{-- <th>NID</th>
-                                    <th>NID Img</th> --}}
+                                    <th>Request Date</th>
+                                    <th>Pickup </th>
+                                    <th>Destationation</th>
                                     <th>Status</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Id</th>
+                                    <th>#</th>
                                     <th>Name</th>
                                     <th>Mobile Number</th>
-                                    <th>request date</th>
-                                    <th>pickup </th>
-                                    <th>destationation</th>
-                                    {{-- <th>NID</th>
-                                    <th>NID Img</th> --}}
+                                    <th>Request Date</th>
+                                    <th>Pickup </th>
+                                    <th>Destationation</th>
                                     <th>Status</th>
                                 </tr>
                             </tfoot>
@@ -53,10 +49,20 @@
                                         <td>{{ $booking->pickup }}</td>
                                         <td>{{ $booking->destationation }}</td>
                                         <td class="text-center">
-                                            <a href="{{ route('driver.edit', $booking->id) }}" class="view"
+                                            @if ($booking->status == "Pending")
+                                            <a href="{{ route('admin.booking.approve', $booking->id) }}" class="view"
                                                 title="View" data-toggle="tooltip">
                                                 Approve
                                             </a>
+                                            @else
+                                            <a href="javascript:void(0)" class="view"
+                                                title="View" data-toggle="tooltip">
+                                                Approved
+                                            </a>
+                                            @endif
+                                            
+
+                                            
                                             {{-- <a href="{{ route('driver.destroy', $booking->id) }}" class="edit"
                                                 title="Edit" data-toggle="tooltip">
                                                 <span style="color: red;">Delete</span> 

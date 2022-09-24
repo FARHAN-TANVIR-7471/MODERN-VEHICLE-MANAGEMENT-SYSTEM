@@ -13,8 +13,18 @@ class BookingController extends Controller
     public function index()
     {
         $bookings = Booking::get();
-        // dd($bookings->toArray());
         return view('admin.booking-list',['bookings' => $bookings]);
+    }
+
+    /**
+     * Admin - Booking request List
+     */
+    public function approve($id)
+    {
+        $bookings = Booking::where('id', $id)->first();
+        $bookings->status = "Approved";
+        $bookings->save();
+        return back();
     }
 
     /**
