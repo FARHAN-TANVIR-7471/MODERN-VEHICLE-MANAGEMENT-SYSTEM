@@ -33,9 +33,8 @@
                             </div>
                             <div class="product-details">
                                 <h3 class="product-title">{{ $driver->name }}</h3>
-                                {{-- <p class="product-price">Start: {{ $transportschedule->start_time }}</p>
-                                <p class="product-price">End: {{ $transportschedule->end_time }}</p> --}}
-                                {{-- <div class="product-info">
+                                <p class="product-price">Number: {{ $driver->mobile_number }}</p>
+                                <div class="product-info">
                                     <div class="star-rating">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -45,10 +44,10 @@
                                         <span class="total-rating">4.5</span>
                                     </div>
 
-                                </div> --}}
-                                {{-- <p>Wordwide shifting available
+                                </div>
+                                <p>Wordwide shifting available
                                     <br> Buyers protection possible!
-                                </p> --}}
+                                </p>
                             </div>
                         </div>
                     @endforeach
