@@ -1,11 +1,14 @@
 <section class="container navbar">
     <div class="menu-logo">
-        <h2><a href="{{ route('home') }}" style="text-decoration: none; color:#E02C6D">TMS</a> </h2>
+        <a href="{{ route('home') }}" style="text-decoration: none; color:#E02C6D"><img src="{{ asset('logo.png') }}" alt="" width="150"></a> 
+
+        
     </div>
 
     <div class="menu-item">
         <ul>
             <li class="mobile-hidden"><a class="{{ Route::currentRouteName() === 'driver.list' ? 'active' : '' }}" href="{{ route('driver.list') }}">Driver</a></li> 
+            <li class="mobile-hidden"><a class="{{ Route::currentRouteName() === 'transport.list' ? 'active' : '' }}" href="{{ route('transport.list') }}">Transport</a></li> 
             <li class="mobile-hidden"><a class="{{ Route::currentRouteName() === 'schodule.list' ? 'active' : '' }}" href="{{ route('schodule.list') }}">Schedule</a></li> 
 
             <li class="mobile-hidden"><a class="{{ Route::currentRouteName() === 'user.booking' ? 'active' : '' }}" href="{{ route('user.booking') }}">Booking</a></li> 
