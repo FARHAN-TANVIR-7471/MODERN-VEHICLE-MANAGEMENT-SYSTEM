@@ -108,11 +108,21 @@ li a{
 .companies{
     margin-top: 70px;
     display: flex;
+    text-align: center;
 } 
 
 .companie img{
     margin-right: 50px;
     align-items: center;
+}
+.companie .bus{
+    width: 150px;
+}
+.companie .truck{
+    width: 180px;
+}
+.companie .car{
+    width: 175px;
 }
 
 /* product section start */
@@ -152,6 +162,22 @@ li a{
     font-size: 18px;
     color: #2e3037;
     /* margin-top: 0; */
+}
+
+/*Transport info*/
+.transport-info-list{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+}
+
+.transport-info-item{
+    background: #FFFFFF;
+    padding: 10px;
+    /* border: medium solid rgb(236, 237, 236); */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
 }
 
 .fa-star{

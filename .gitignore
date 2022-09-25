@@ -2,7 +2,6 @@
 /public/hot
 /public/images
 /public/storage
-/public/image
 /storage/*.key
 /vendor
 .env

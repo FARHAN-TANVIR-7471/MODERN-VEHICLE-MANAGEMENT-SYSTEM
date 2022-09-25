@@ -45,13 +45,25 @@
 
         <!-- companies logo start -->
         <section class="container">
-            <div class="companies">
-                <div class="companie"><img src="logos/Alibaba.svg" alt="" class="logo"></img></div>
-                <div class="companie"><img src="logos/Amazon.svg" alt="" class="logo"></img></div>
-                <div class="companie"><img src="logos/Daraz.pk Logo.svg" alt="" class="logo"></img></div>
-                <div class="companie"><img src="logos/Ebay.svg" alt="" class="logo"></img></div>
+            <div class="news-latter" style="margin-top: 58px;">
+                <h2 class="news-latter-title text-color">Your Transport Service</h2>
+            </div>
+            <div class="companies" style="margin-top: -20px ">
+                <div class="companie">
+                    <img src="{{ asset('image/bus.jpeg') }}" alt="" class="bus">
+                    <h3 class="text-color" style="margin-top: 23px;">Bus Service</h3>
+                </div>
+                <div class="companie">
+                    <img src="{{ asset('image/truck.webp') }}" alt="" class="truck">
+                    <h3 class="text-color" style="margin-top: 38px;">Truck Service</h3>
+                </div>
+                <div class="companie">
+                    <img src="{{ asset('image/car.jpeg') }}" alt="" class="car">
+                    <h3 class="text-color">Card Service</h3>
+                </div>
+                {{-- <div class="companie"><img src="logos/Ebay.svg" alt="" class="logo"></img></div>
                 <div class="companie"><img src="logos/Rakuten.svg" alt="" class="logo"></img></div>
-                <div class="companie"><img src="logos/Walmart.svg" alt="" class="logo"></img></div>
+                <div class="companie"><img src="logos/Walmart.svg" alt="" class="logo"></img></div> --}}
             </div>
         </section>
         <!-- companies logo end -->
@@ -59,227 +71,19 @@
         <!-- Product  section -->
         <section class="container">
             <div class="products">
-                <h1>Popular Collection</h1>
-                <div class="product">
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/tripod.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Flex Tripod</h3>
-                            <p class="product-price">$50.48</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-
-                            </div>
-                            <p>Wordwide shifting available
-                                <br> Buyers protection possible!
-                            </p>
-                        </div>
+                <h1 class="text-color">About TMS</h1>
+                <div class="companies">
+                    <div class="companie">
+                        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=new bodel collage&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">MCPE Nation</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
                     </div>
-
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/mic.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Microphone</h3>
-                            <p class="product-price">$120.25</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-
-                            </div>
-                            <p>Wordwide shifting available
-                                <br> Buyers protection possible!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/airpod.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Airbuds</h3>
-                            <p class="product-price">$100.00</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-
-                            </div>
-                            <p>Wordwide shifting available
-                                <br> Buyers protection possible!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/drone.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Drone</h3>
-                            <p class="product-price">$980.48</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-
-                            </div>
-                            <p>Wordwide shifting available
-                                <br> Buyers protection possible!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/lights.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Light Setup</h3>
-                            <p class="product-price">$120.00</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-
-                            </div>
-                            <p>Wordwide shifting available
-                                <br> Buyers protection possible!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/lights.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Photoshoot set</h3>
-                            <p class="product-price">$820.00</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-
-                            </div>
-                            <p>Wordwide shifting available
-                                <br> Buyers protection possible!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/camera.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Vlogging Camera</h3>
-                            <p class="product-price">$1800.80</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-
-                            </div>
-                            <p>Wordwide shifting available
-                                <br> Buyers protection possible!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/single-light.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Green Screen</h3>
-                            <p class="product-price">$28.48</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-
-                            </div>
-                            <p>Wordwide shifting available
-                                <br> Buyers protection possible!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/action.png" alt="">
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-title">Action Camera</h3>
-                            <p class="product-price">$380.00</p>
-                            <div class="product-info">
-                                <div class="star-rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star empty"></i>
-                                    <span class="total-rating">4.5</span>
-                                </div>
-
-                            </div>
-                            <p>Wordwide shifting available
-                                <br> Buyers protection possible!
-                            </p>
-                        </div>
+                    <div class="companie" style="padding: 20px">
+                        <p>Transport Corporation is one of the leading Bus, Truck and Car Transportation Service Provider in India. At Jamuna Transport Corporation, our goal is to provide the best and secure car transportation service to our clients. Our branches are located all over India comprising major cities, mostly adjacent to Car Manufacturing Units. We simply transport your car to your exact destination by our own car carrier with extra care.</p>
                     </div>
                 </div>
-                <div class="see-more">
+
+                {{-- <div class="see-more">
                     <a href="#">See More <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
-                </div>
+                </div> --}}
             </div>
 
 
@@ -287,7 +91,7 @@
 
         <section class="container">
             <div class="news-latter">
-                <h2 class="news-latter-title">Complain</h2>
+                <h2 class="news-latter-title text-color">Complain</h2>
             </div>
             <div class="news-latter-form">
                 <form action="{{ route('complaneinsert') }}" method="post" enctype="multipart/form-data">
