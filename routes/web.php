@@ -81,6 +81,7 @@ Route::group(['middleware' => ['auth']], function(){
 
 Route::get('/schodule-list','TransportscheduleController@schoduleList')->name('schodule.list');
 Route::get('/driver-list','DriverController@driverList')->name('driver.list');
+Route::get('/transport-list','TransportscheduleController@transportList')->name('transport.list');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

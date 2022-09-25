@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\transport;
 use App\Transportschedule;
 use Illuminate\Http\Request;
 use DB;
@@ -106,10 +107,13 @@ class TransportscheduleController extends Controller
 
     public function schoduleList()
     {
-        // $authors = Author::with(['books' => fn($query) => $query->where('title', 'like', 'PHP%')])
-
-        // $transportschedules = Transportschedule::with('transport')->get();
         $transportschedules = Transportschedule::with('transport')->get();
         return view('schodule-list', ["transportschedules" => $transportschedules]);
+    }
+
+    public function transportList(){
+        $transports = transport::get();
+        // dd($transports->toArray());
+        return view('transport-list', ["transports" => $transports]);
     }
 }
