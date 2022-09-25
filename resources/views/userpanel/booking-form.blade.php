@@ -43,31 +43,31 @@
                                 <div class="col-md-6 mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Name</label>
                                     <input type="text" class="form-control" id="name"
-                                        aria-describedby="emailHelp" name="name">
+                                        aria-describedby="emailHelp" name="name" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="mobile" class="form-label">Mobile</label>
-                                    <input type="text" class="form-control" id="mobile" name="mobile">
+                                    <input type="text" class="form-control" id="mobile" name="mobile" required>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
                                     <label for="request_date" class="form-label">Request Date</label>
-                                    <input type="datetime-local" class="form-control" id="request_date" name="request_date">
+                                    <input type="datetime-local" class="form-control" id="request_date" name="request_date" required>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
                                     <label for="pickup" class="form-label">Pick-up</label>
-                                    <input type="text" class="form-control" id="pickup" name="pickup">
+                                    <input type="text" class="form-control" id="pickup" name="pickup" required>
                                 </div>
 
                                 <div class="col-md-12 mb-3">
                                     <label for="destationation" class="form-label">Destationation</label>
                                     <input type="text" class="form-control" id="destationation"
-                                        name="destationation">
+                                        name="destationation" required>
                                 </div>
                             </div>
                             <div class="col-6 mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
                             </div>
                             <button type="submit" class="block">SUBMIT</button>
