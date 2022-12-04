@@ -62,7 +62,7 @@
                 </div>
                 <div class="companie">
                     <img src="{{ asset('image/car.jpeg') }}" alt="" class="car">
-                    <h3 class="text-color">Card Service</h3>
+                    <h3 class="text-color">Car Service</h3>
                     <p> You Can Save Big! Car Rental on Expedia. Get the Most Out of Your Trip with Package Deals.</p>
 
                 </div>
@@ -80,10 +80,14 @@
                 <div class="companies">
                     <div class="companie">
                         <div class="mapouter">
-                            <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no"
+                            <div class="gmap_canvas">
+                                {{-- <iframe class="gmap_iframe" frameborder="0" scrolling="no"
                                     marginheight="0" marginwidth="0"
-                                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=new bodel collage&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                                    href="https://mcpenation.com/">MCPE Nation</a></div>
+                                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=new bodel collage&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                </iframe> --}}
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14593.434839757201!2d90.3201592!3d23.8768956!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c872fd17bc11ddb!2sDaffodil%20International%20University!5e0!3m2!1sen!2sbd!4v1670180806734!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <a href="https://mcpenation.com/">MCPE Nation</a>
+                                </div>
                             <style>
                                 .mapouter {
                                     position: relative;
@@ -108,10 +112,9 @@
                     </div>
                     <div class="companie" style="padding-left: 20px; text-align: justify;">
                         <p>Transport Corporation is one of the leading Bus, Truck and Car Transportation Service
-                            Provider in India. At Jamuna Transport Corporation, our goal is to provide the best and
-                            secure car transportation service to our clients. Our branches are located all over India
-                            comprising major cities, mostly adjacent to Car Manufacturing Units. We simply transport
-                            your car to your exact destination by our own car carrier with extra care.</p>
+                            Provider in Bangladesh. At DIU Transport Corporation, our goal is to provide the best and
+                            secure transportation service to our clients (Student & Teacher). Our branches are located all over Bangladesh
+                            comprising major cities, mostly adjacent to transport Dhaka Units.</p>
                     </div>
                 </div>
 
