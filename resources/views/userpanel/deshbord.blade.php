@@ -13,7 +13,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ URL::asset('fontend/style.css') }}">
     {{-- <link rel="stylesheet" href="fontend/style.css"> --}}
-    <title>Transport</title>
+    <title>DIU TMS</title>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
                                     <td>{{ $booking->status }}</td>
                                 </tr>
                                 @endforeach
-                                
+
                             </tbody>
                         </table>
                     </div>
@@ -72,8 +72,8 @@
 
     <!-- footer section -->
     <footer class="text-font">
-        <h3>Influencer products</h3>
-        <small>Copyright <span>&copy;</span> 2020 influencer products</small>
+        <h3>DIU Transport Managment System</h3>
+        <small>Copyright <span>&copy;</span> 2022 DIU TMS</small>
         <br>
         <small>All rights reserved</small>
         <div class="social-media">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>DIU TMS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,10 +18,10 @@
           <div class="form-group col-md-12">
               <label for="exampleFormControlInput1">Purpose: </label>
               <select name="perpose" class="form-control" id="exampleFormControlSelect1">
-                  <option value="Driver">Driver</option> 
-                  <option value="Mannager">Mannager</option> 
-                  <option value="Transport">Transport</option> 
-                  <option value="Passenger">Passenger</option>                    
+                  <option value="Driver">Driver</option>
+                  <option value="Mannager">Mannager</option>
+                  <option value="Transport">Transport</option>
+                  <option value="Passenger">Passenger</option>
               </select>
           </div>
       </div>
